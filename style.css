@@ -1,0 +1,339 @@
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+  height: 100vh;
+  background-image: url('sunsetimg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  animation: fade 0.1s ease 0s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+nav {
+  backdrop-filter: blur(6px);
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  animation: fade 3s ease 0s;
+}
+
+nav img {
+  position: fixed;
+  top: 10px;
+  left: 12px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: 0.2s ease;
+}
+
+nav ul {
+  list-style-type: none;
+  position: relative;
+  left: 44px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #ffd700;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+nav ul li:not(:hover)::after {
+  width: 0;
+  left: 50%;
+}
+
+nav ul li a:hover {
+  transform: scale(1.1);
+  color: #ffd700;
+}
+
+nav img:hover {
+  border: 2px solid rgb(224, 96, 11);
+}
+
+.login-container {
+  position: relative;
+  background-size: cover;
+  backdrop-filter: blur(3px);
+  padding: 20px;
+  border-radius: 10px;
+  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adding a box-shadow for the effect */
+}
+
+.register-container {
+  position: relative;
+  background-size: cover;
+  backdrop-filter: blur(3px);
+  padding: 20px 100px;
+  border-radius: 10px;
+ 
+  box-shadow: 0 0 10px rgba(14, 14, 14, 0.5); /* Adding a box-shadow for the effect */
+}
+.login-form {
+  text-align: center;
+  color: rgb(196, 54, 54);
+  font-weight: bold;
+}
+
+.register-form {
+  text-align: center;
+  color: rgb(196, 54, 54);
+  font-weight: bold;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+}
+
+input::placeholder {
+  color: #000000;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"],
+.input-group input[type="email"] {
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.4);
+  justify-content: center;
+  color: #000000;
+  font-weight: bold;
+  height: 50px;
+  width: 370px;
+  padding: 0 10px 0 45px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  transition: 0.2s ease;
+  animation: fade 3s ease 0s;
+}
+
+.two-forms input[type="text"] {
+  position: relative;
+  gap: 0px;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.4);
+  justify-content: center;
+  color: #000000;
+  font-weight: bold;
+  height: 50px;
+  width: 150px;
+  padding: 0 10px 0 45px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  transition: .2s ease;
+  animation: fade 3s ease 0s;
+}
+
+.input-box i {
+  color: rgb(196, 54, 54);
+  font-size: 20px;
+  position: relative;
+  top: 3px;
+  left: -415px;
+  gap: 20px;
+  font-weight: bold;
+}
+
+.two-forms {
+  display: flex;
+  gap: -100px;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  pointer-events: none;
+  animation: fade 3s ease 0s;
+}
+
+h2 {
+  color: gold;
+  position: absolute;
+  top: 95%;
+  right: 5%;
+  font-family: 'Pacifico', cursive;
+  font-size: 16px;
+  animation: fade 3s ease 0s;
+}
+
+p {
+  color: white;
+  animation: fade 3s ease 0s;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.changer {
+  width: 100px;
+  position: absolute;
+  padding: 10px 10px;
+  font-size: 26px;
+  color: aqua;
+  background-color: transparent;
+  border: 2px solid aqua;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 1s ease;
+  top: 10%;
+  left: 50%;
+}
+
+.changer:hover {
+  background: none;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+
+.input-group input {
+  width: 93%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #5cb85c;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.9s;
+  animation: fade 3s ease 0s;
+}
+
+button:hover {
+  background-color: #338533;
+}
+
+@media (max-width: 768px) {
+  .login-form {
+    margin: 20px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: orange;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#loginb {
+  position: fixed;
+  top: 10px;
+  right: 110px;
+  background-color: transparent;
+  overflow: auto;
+  width: auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  border-radius: 50px;
+  width: 100px;
+  border: 2px solid black;
+}
+
+#loginb:hover {
+  border: none;
+  background-color: red;
+}
+#registerb {
+  background: transparent;
+  position: fixed;
+  top: 10px;
+  right: 1px;
+  overflow: auto;
+  width: auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  border-radius: 50px;
+  width: 100px;
+  border: 2px solid black;
+}
+
+#registerb:hover {
+  border: none;
+  background-color: red;
+}
+
+@media only screen and (max-width: 540px) {
+  .wrapper {
+    min-height: 100vh;
+  }
+}

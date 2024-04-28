@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="https://i.ibb.co/7C6HczQ/Coding-Mania-pfp.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<nav>
+  <ul>
+    <li><img src="https://i.ibb.co/7C6HczQ/Coding-Mania-pfp.jpg" alt="add-your-Logo" class="logo"></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
+</nav>
+<div class="nav-btn">
+  <button class="btn" id="loginb" onclick="redirectToIndex()">Sign In</button>
+  <button class="btn" id="registerb" onclick="redirectToRegister()">Sign Up</button>
+
+<script>
+    function redirectToIndex() {
+        window.location.href = 'index.html';
+    }
+</script>
+
+<script>
+  function redirectToRegister() {
+      window.location.href = 'register.html';
+  }
+  </script>
+
+<div class="login-container">
+  <div class="overlay"></div>
+  <div class="login-form">
+    <h1>Sign In</h1>
+    <form action="/submit-your-login-form" method="post">
+      <div class="input-group">
+        <label for="username">Username/Email:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username or email">
+        <i class="bx bx-user"></i>
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <i class="bx bx-lock-alt"></i>
+      </div>
+
+      <button type="submit">Login</button>
+      <br>
+      <a href="register.html">
+        <p>Don't have an account? Register now</p>
+      </a>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script>
+  document.getElementById('logo').addEventListener('click', function() {
+  window.location.href = 'https://coiding-mania.github.io/mania.site/';
+});
+</script>
+
+<h2 id="madeBy" title="click to open">Made By Akshat Sharma</h2>
+ <script>
+  document.getElementById('madeBy').addEventListener('click', function () {
+      window.location.href = 'https://www.instagram.com/_sky_ak47/';
+  });
+</script>
+
+<script>
+  var a = document.getElementById9("login")
+</script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register Form</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="https://i.ibb.co/7C6HczQ/Coding-Mania-pfp.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<nav>
+  <ul>
+    <li><img src="https://i.ibb.co/7C6HczQ/Coding-Mania-pfp.jpg" alt="add-your-Logo" class="profile-pic"></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
+</nav>
+<div class="nav-btn">
+  <button class="btn" id="loginb" onclick="redirectToIndex()">Sign In</button>
+  <button class="btn" id="registerb" onclick="redirectToRegister()">Sign Up</button>
+
+<script>
+    function redirectToIndex() {
+        window.location.href = 'index.html';
+    }
+</script>
+
+<script>
+  function redirectToRegister() {
+      window.location.href = 'register.html';
+  }
+</script>
+</div>
+<body>
+    
+  <button class="changer" id="changeBackgroundBtn">➤</button>
+
+<div class="register-form">
+  <div class="register-container">
+<h1>Sign Up</h1>
+<form action="/submit-your-register-form" method="post">
+ 
+    <div action="/submit-your-register-form" method="post">
+      <div class="input-group">
+        
+        </div>
+
+
+        <div class="two-forms">
+          <div class="input-box">
+              <input type="text" class="input-field" placeholder="Firstname">
+              
+          </div>
+          <div class="input-box">
+              <input type="text" class="input-field" placeholder="Lastname">
+              
+          </div>
+      </div>
+
+
+
+        <br>
+<div class="input-group">
+<label for="email"></label>
+<input type="email" id="email" name="email" placeholder="Email" required>
+
+</div>
+
+  <br>
+
+<div class="input-group">
+<label for="new-password"></label>
+<input type="password" id="new-password" name="password" placeholder="Password"required>
+</div>
+<br>
+
+<div class="input-group">
+<label for="confirm-password"></label>
+<input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+</div>
+<br>
+</div>
+<button type="submit">Register</button>
+</form>
+<a href="index.html">
+    <p> Alredy have an account? Login </p>
+</a>
+</div>
+
+<script src="script.js"></script>
+
+
+<h2 id="madeBy" title="click to open">Made By Akshat Sharma</h2>
+ <script>
+  document.getElementById('madeBy').addEventListener('click', function () {
+      window.location.href = 'https://www.instagram.com/_sky_ak47/';
+  });
+</script>
+<!---Script for image bg changing --->
+<script>
+     
+  const images = [
+    'sunsetimg.png',
+    'https://i.ibb.co/9pFmq8j/pexels-photo.jpg',
+    'https://i.ibb.co/LNw5gWb/free-photo-of-abundance-of-beads.jpg',
+    'moonlight.png',
+    'https://images.pexels.com/photos/1410224/pexels-photo-1410224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    
+    'https://images.pexels.com/photos/1450963/pexels-photo-1450963.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+  ];
+
+  const button = document.getElementById('changeBackgroundBtn');
+  let currentIndex = 0;
+
+  button.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % images.length;
+      document.body.style.backgroundImage = `url('${images[currentIndex]}')`;
+  });
+</script>
+
+<script>
+  var a = document.getElementById("login")
+  var b = document.getElementById("register")
+  var c= document.getElementById("loginb")
+  var d = document.getElementById("registerb")
+  
+</script>
+
+</body>
+</html>
